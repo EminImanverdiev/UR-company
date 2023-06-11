@@ -435,7 +435,7 @@
     opacity: 0;
 }
 
-#Blogs {
+#Blogs,#Services {
     padding: 30px 0px;
 }
 
@@ -502,7 +502,6 @@
 #Blogs .container .row .col-lg-11:hover .picture img{
     transition: 1s !important;
 }
-
 #Blogs .container .row .col-lg-11:hover .card-bottom {
     opacity: 1;
 }
@@ -544,14 +543,14 @@
     font-weight: 500;
 }
 
-#Blogs .container .hr {
+#Blogs .container .hr,#Services .container .hr {
     width: 100px !important;
     height: 3px !important;
     background-color: #f35b04 !important;
     margin-top: 15px;
 }
 
-#Blogs .container .title-content {
+#Blogs .container .title-content,#Services .container .title-content {
     width: 250px;
     margin-left: 10px;
     font-family: DroidSerif;
@@ -564,12 +563,42 @@
     margin-top: 60px;
 }
 
-#Blogs .container .blog-title h3 {
+#Blogs .container .blog-title h3,#Services .container .service-title h3 {
     line-height: 48px;
     font-weight: 600;
-    font-size: 50px !important;
+    font-size: 48px !important;
 }
-
+#Services .container .col-xl-4 a{
+    text-decoration: none!important;
+    text-align: center;
+}
+#Services .container .col-xl-4{
+    margin-top: 60px;
+}
+#Services .container .col-xl-4 .card{
+    transition: 0.6s;
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px rgb(111, 111, 111);
+}
+#Services .container .col-xl-4 .card:hover{
+    background-color: #ee6c21;
+}
+#Services .container .col-xl-4 .card:hover i,#Services .container .col-xl-4 .card:hover p{
+    color: white;
+}
+#Services .container .col-xl-4 i{
+    font-size: 28px;
+    color: #ee6c21;
+    margin-top: 15px;
+}
+#Services .container .col-xl-4 h3{
+    color: #011627;
+    margin-top: 25px;
+}
+#Services .container .col-xl-4 p{
+    color: gray;
+    margin-top: 10px;
+}
 #Teams {
     padding: 30px 0px;
 }
@@ -970,10 +999,6 @@
     color: white;
 
 }
-
-
-
-
 #all {
     text-align: center;
     display: -webkit-box;
@@ -1047,28 +1072,27 @@
 #Contacts {
     padding: 80px 0px;
 }
-
-#Contacts .container .col-lg-6 .contact-title h3 {
+#Contacts .container .col-xl-12 .contact-title h3 {
     font-size: 30px;
     line-height: 48px;
     font-weight: 600;
 }
 
-#Contacts .container .col-lg-6 .contact-title p {
+#Contacts .container .col-xl-12 .contact-title p {
     color: #525252;
     font-size: 19px;
     line-height: 32px;
     margin-top: 60px;
 }
 
-#Contacts .container .col-lg-6 .hr {
+#Contacts .container .col-xl-12 .hr {
     width: 100px !important;
     height: 3px !important;
     background-color: #f35b04 !important;
     margin-top: 15px;
 }
 
-#Contacts .container .col-lg-6 .title-content {
+#Contacts .container .col-xl-12 .title-content {
     width: 250px;
     margin-left: 10px;
     font-family: DroidSerif;
@@ -1076,47 +1100,6 @@
     font-size: 22px;
     color: #f35b04;
 }
-
-#Contacts .container .col-lg-6 .cont-num i {
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    line-height: 40px;
-    background-color: #f35b04;
-    color: #fff;
-    border-radius: 50%;
-    padding: 4px 14px !important;
-    transition: 1s;
-    cursor: pointer;
-}
-
-#Contacts .container .col-lg-6 .cont-num .fa-location-dot {
-    padding: 4px 18px !important;
-}
-
-#Contacts .container .col-lg-6 .cont-num {
-    margin-top: 70px !important;
-}
-
-#Contacts .container .col-lg-6 .cont-num i:hover {
-    background-color: white;
-    color: #f35b04;
-}
-
-#Contacts .container .col-lg-6 .cont-num span h6 {
-    color: #011627;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Nunito', sans-serif;
-
-}
-
-#Contacts .container .col-lg-6 .cont-num span p {
-    color: #525252;
-    font-size: 18px;
-    line-height: 28px;
-}
-
 .twice-two {
     display: grid;
     grid-gap: 20px;
@@ -1124,9 +1107,9 @@
     margin-bottom: 20px;
 }
 
-#Contacts .container .col-lg-6 form .twice-two input,
-#Contacts .container .col-lg-6 form textarea,
-#Contacts .container .col-lg-6 form .twice input {
+#Contacts .container .col-xl-12 form .twice-two input,
+#Contacts .container .col-xl-12 form textarea,
+#Contacts .container .col-xl-12 form .twice input {
     background: #f4f4f4;
     border: 1px solid transparent;
     color: #525252;
@@ -1139,17 +1122,17 @@
     margin-top: 35px;
 }
 
-#Contacts .container .col-lg-6 form textarea {
+#Contacts .container .col-xl-12 form textarea {
     resize: none;
     min-height: 140px;
     margin-top: 35px;
 }
 
-#Contacts .container .col-lg-6 form {
+#Contacts .container .col-xl-12 form {
     position: relative;
 }
 
-#Contacts .container .col-lg-6 form .btn-primary {
+#Contacts .container .col-xl-12 form .btn-primary {
     color: #fff;
     background-color: #f35b04;
     border-color: #f35b04;
@@ -1164,15 +1147,15 @@
     margin-top: 40px;
 }
 
-#Contacts .container .col-lg-6 form textarea:focus {
+#Contacts .container .col-xl-12 form textarea:focus {
     box-shadow: 0px 0px 5px #ee6c21;
 }
 
-#Contacts .container .col-lg-6 form input:focus {
+#Contacts .container .col-xl-12 form input:focus {
     box-shadow: 0px 0px 5px #ee6c21;
 }
 
-#Contacts .container .col-lg-6 form .btn-primary:hover {
+#Contacts .container .col-xl-12 form .btn-primary:hover {
     background-color: #3d348b;
     border: none;
     padding: 13px 36px;
