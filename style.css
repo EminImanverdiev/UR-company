@@ -821,6 +821,15 @@
         filter: brightness(82%);
         z-index: -1;
     }
+    .allteam{
+        display: block!important;
+    }
+    .allteam.active,.allproduct.active{
+        display: none!important;
+    }
+    .resp-part,.resp-blog{
+        display: none;
+    }
 
     #Blogs .container .row .col-lg-11 .card-bottom {
         font-size: 9px;
@@ -1174,8 +1183,22 @@
     font-weight: 600;
     transition: 1s;
 }
-
-.allproduct:hover {
+.allteam {
+    width: 95% !important;
+    height: 65px;
+    background-color: #ffcb2e;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 18px;
+    font-size: 22px;
+    color: #011627 !important;
+    font-weight: 600;
+    transition: 1s;
+    display: none;
+}
+.allproduct:hover,.allteam:hover {
     background-color: #011627;
     color: #ffcb2e !important;
+    cursor: pointer;
 }
