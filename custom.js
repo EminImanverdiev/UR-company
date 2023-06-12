@@ -25,3 +25,15 @@ document.querySelector('#close-contact').addEventListener('click',function() {
    document.querySelector('body').classList.remove('active')    
    document.querySelector('.contact-section').classList.remove('active')    
  })
+document.querySelector('.allteam').addEventListener('click',function(){
+    document.querySelectorAll('.resp-part').forEach(ele=>{
+        document.querySelector('.allteam').classList.add('active')
+        ele.style.display="block";
+    })
+})
+document.querySelector('.allproduct').addEventListener('click',function() {
+    document.querySelectorAll('.resp-blog').forEach(ele=>{
+        document.querySelector('.allproduct').classList.add('active')
+        ele.style.display="block";
+    })
+})
